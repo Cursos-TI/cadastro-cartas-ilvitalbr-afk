@@ -15,16 +15,18 @@ int main() {
   int pontos1_turistico, pontos2_turistico;
   float area1_km2, area2_km2;
   float pib1, pib2;
+  float densidade1, densidade2;
+  float pibcapita1, pibcapita2;
 
 
   // Área para entrada de dados
 
   printf("Cadastro da Carta 1\n");
 
-  printf("Digite o estado uma letra de 'A' a 'H' (representando um dos oito estados) : ");
+  printf("Digite o estado uma letra de 'A' a 'H' (representando um dos oito estados) : \n");
   scanf("%s", &estado1);
 
-  printf("Digite o codigo da Carta a letra do estado seguida de um número de 01 : ");
+  printf("Digite o codigo da Carta 1 (a letra do estado seguida de um número 01) : ");
   scanf("%s", &codigo1);
 
   printf("Digite a população: ");
@@ -39,6 +41,9 @@ int main() {
   printf("Digite o PIB: ");
   scanf("%f", &pib1);
 
+  densidade1 = (populacao1/area1_km2);
+ 
+
 
 // Área para exibição dos dados 
    printf("Carta 1\n");
@@ -47,13 +52,15 @@ int main() {
 
   printf("Codigo: %s \n", codigo1);
 
-  printf("População: %d Milhões\n", populacao1);
+  printf("População: %d\n", populacao1);
 
   printf("Pontos Turisticos: %d\n", pontos1_turistico);
 
-  printf("Area Km2: %f\n", area1_km2);
+  printf("Area Km2: %f km²\n", area1_km2);
 
-  printf("PIB: %f\n", pib1);
+  printf("PIB: %f bilhões de reais\n", pib1);
+
+  printf("Densidade Demografica: %f\n ", densidade1);
 
 
 
