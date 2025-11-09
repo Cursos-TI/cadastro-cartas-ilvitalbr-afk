@@ -23,10 +23,10 @@ int main() {
 
      printf("*****Cadastro da Carta 1*****\n");
 
-     printf("Digite o estado uma letra de 'A' a 'H' (representando um dos oito estados) : ");
+     printf("Digite o estado : ");
      scanf("%s", &estado1);
 
-     printf("Digite o codigo da Carta 1 (a letra do estado seguida de um número 01) : ");
+     printf("Digite o codigo da Carta 1 (a primeira letra do estado seguida de um número 01) : ");
      scanf("%s", &codigo1);
 
      printf("Digite a Cidade: ");
@@ -46,9 +46,9 @@ int main() {
      scanf("%f", &pib1);
   
      // Calculando densidade demgrafica Carta 1
-     densidade1 = (populacao1/area1_km2);
+     densidade1 =  (float) populacao1/area1_km2;
      // Calculo renda per capita
-     pibcapita1 = (pib1 / populacao1);
+     pibcapita1 = (float) pib1 / populacao1;
  
 
      // Área para exibição dos dados 
@@ -60,7 +60,7 @@ int main() {
 
      printf("Cidade: %s \n", nome_cidade1);
 
-     printf("População: %d\n", populacao1);
+     printf("População: %d \n",  populacao1);
 
      printf("Pontos Turisticos: %d\n", pontos1_turistico);
 
@@ -68,23 +68,25 @@ int main() {
 
      printf("PIB: %f bilhões de reais\n", pib1);
 
-     printf("Densidade Demografica: %f hab/km²\n ", densidade1);
+     printf("Densidade Demografica: %.6f hab/km²\n ", densidade1);
 
-     printf("PIB per Capita: %f reais \n", pibcapita1);
+     printf("PIB per Capita: %.8f reais\n", pibcapita1);
 
  
      printf("--------------------------------------------------------------------------------\n");
-     // Cadastro Carta 2
-     //  Entrada de dados
+      // Área para entrada de dados
+
      printf("*****Cadastro da Carta 2*****\n");
-     printf("Digite o estado uma letra de 'A' a 'H' (representando um dos oito estados) : ");
+
+     printf("Digite o estado : ");
      scanf("%s", &estado2);
 
-     printf("Digite o codigo da Carta 2 (a letra do estado seguida de um número 02) : ");
+     printf("Digite o codigo da Carta 1 (a primeira letra do estado seguida de um número 02) : ");
      scanf("%s", &codigo2);
 
-     printf("Digite a Cidade:");
+     printf("Digite a Cidade: ");
      scanf("%s", &nome_cidade2);
+
 
      printf("Digite a população: ");
      scanf("%d", &populacao2);
@@ -99,30 +101,31 @@ int main() {
      scanf("%f", &pib2);
   
      // Calculando densidade demgrafica Carta 2
-     densidade2 = (populacao2 / area2_km2);
+     densidade2 =  (float) populacao2/area2_km2;
+     // Calculo renda per capita
+     pibcapita2 = (float) pib2 / populacao2;
  
-     pibcapita2 = (pib2 / populacao2);  
 
-      // Área para exibição dos dados 
+     // Área para exibição dos dados 
      printf("Carta 2\n");
 
      printf("Estado: %s \n", estado2);
 
      printf("Codigo: %s \n", codigo2);
 
-     printf("Cidade: %s", &nome_cidade2);
+     printf("Cidade: %s \n", nome_cidade2);
 
-     printf("População: %d\n", populacao2);
+     printf("População: %d \n",  populacao2);
 
      printf("Pontos Turisticos: %d\n", pontos2_turistico);
 
-     printf("Area Km2: %f km²\n", area2_km2);
+     printf("Area Km2: %f km²\n", area1_km2);
 
      printf("PIB: %f bilhões de reais\n", pib2);
 
-     printf("Densidade Demografica: %f hab/km²\n ", densidade2);
+     printf("Densidade Demografica: %.6f hab/km²\n ", densidade2);
 
-     printf("PIB per Capita: %f reais \n", pibcapita2);
+     printf("PIB per Capita: %.8f reais\n", pibcapita2);
 
       return 0;
 
