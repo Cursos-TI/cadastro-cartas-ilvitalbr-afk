@@ -125,7 +125,7 @@ int main() {
      printf("PIB per Capita: %f reais \n", pibcapita2);
 
       return 0;
-      
+
 }
 
 
